@@ -3,44 +3,59 @@
 <head>
 	<meta charset="UTF-8">
 	<title>WEB-Welcome</title>
-	<style type="text/css">
-		*{margin:0; padding: 0;}
-		body{font:normal 16px '바른나눔고딕'; margin: 20px;}
-		li{font-weight: bold;}
-		a{color:#5A73D6; text-decoration: none;}
-		a:hover{text-decoration: underline;}
+	<style>
+		*{margin:0; padding: 0; border:0 solid #ddd;}
+		body{font:normal 16px 'arial';}
+		header{margin-bottom: 30px;}
+		aside{float:left; height:100vw; margin:70px 20px 0 20px; line-height:30px ;}
+		li{font-weight:bold; font-size:20px; list-style:none;  width:120px; height:40px; text-align: center;  line-height:40px; transition:all 2s;}
+		li:nth-child(1):hover{background-color:#bfbfbf;}
+		li:nth-child(2):hover{background-color:#a6a6a6;}
+		li:nth-child(3):hover{background-color:#8c8c8c;}
+		li a:hover{color:#fff;}
+		section{width:800px; margin:0 auto;}
+		h1{text-align: center; font-size:60px; font-family: 'Roboto Slab', serif;}
+		h2{text-align:center; margin-top:10px;}
+		hr{border: 2px #ddd dashed;}	
+		#source{text-align:center; color:#808080;}
+		.quote{font-style: italic;text-align: center;margin:30px 0;}
+		a{color:#000; text-decoration: none;}
+		h1 a:hover{color:#5A73D6;}
 		p{margin-bottom: 10px;}
-		.quote{font-style: italic;text-align: center;margin:20px 0;}
-		.head{color:#000;}
-		
+
 	</style>
-
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144500666-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144500666-1"></script>
+	<script>
+ 	 window.dataLayer = window.dataLayer || [];
+ 	 function gtag(){dataLayer.push(arguments);}
+ 	 gtag('js', new Date());
 
-  gtag('config', 'UA-144500666-1');
-</script>
-
+ 	 gtag('config', 'UA-144500666-1');
+	</script>
 </head>
 
 <body>
-	<h1><a href="index.html" class="head">WEB</a></h1>
-	<ol style="font-weight:bold;">
-		<li><a href="1.html" class="head">HTML</a></li>
-		<li><a href="2.html" class="head">CSS</a></li>
-		<li><a href="3.html" class="head">JavaScript</a></li>
+<header></header>
+
+<aside>
+	<ol class="head">
+		<li><a href="1.html" title="Jump to HTML">HTML</a></li>
+		<li><a href="2.html" title="Jump to CSS">CSS</a></li>
+		<li><a href="3.html" title="Jump to JavaScript">JavaScript</a></li>
 	</ol>
-	<br />
-	<br />
-	<h2>World Wide Web</h2>
+</aside>
+
+<section>
 	<hr />
-	<span style="font-size:14px;">From Wikipedia, the free encyclopedia</span>
+	<h1><a href="index.html" class="head">WEB</a></h1>
+	<hr />
+	<h2>World Wide Web</h2>
+	<p id="source">From Wikipedia, the free encyclopedia</p>
 	<div>
-		<p class="quote">&quot;WWW&quot; and &quot;The Web&quot; redirect here. For other uses of WWW, see WWW (disambiguation). For other uses of web, see Web (disambiguation).<br />
+		<p class="quote">&quot;WWW&quot; and &quot;The Web&quot; redirect here. For other uses of WWW, see WWW (disambiguation).<br />
+		For other uses of web, see Web (disambiguation).<br />
 		For the first web software, see WorldWideWeb.<br />
 		Not to be confused with the Internet.</p>
 
@@ -52,19 +67,20 @@
 
 		<p>Multiple web resources with a common theme, a common domain name, or both, make up a website. Websites are stored in computers that are running a program called a web server that responds to requests made over the Internet from web browsers running on a user's computer. Website content can be largely provided by a publisher, or interactively where users contribute content or the content depends upon the users or their actions. Websites may be provided for a myriad of informative, entertainment, commercial, governmental, or non-governmental reasons.</p>
 	</div>
+</section>
 	
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5d3859a89b94cd38bbe909a4/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
+<!--채팅 추가-->
+	<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5d3859a89b94cd38bbe909a4/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
 <!--End of Tawk.to Script-->
 
 </body>
